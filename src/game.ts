@@ -60,7 +60,7 @@ for (let i = 0; i < colors.length; i++) {
 }
 
 // Add Tiles
-;[0, 1, 2, 3, 4, 5 ].forEach((x) => {
+;[0, 1, 2, 3, 4, 5].forEach((x) => {
   ;[0, 1, 2, 3, 4, 5].forEach((z) => {
     const tile = new Entity()
     tile.addComponent(new PlaneShape())
@@ -107,7 +107,7 @@ beatKeeper.addComponent(new Beat(0.5))
 
 audioSource.playing = true
 const party = new Entity()
-party.addComponent(new GLTFShape("models/03_Wearble_dispenser.glb"))
+party.addComponent(new GLTFShape("models/01_rocket.glb"))
 party.addComponent(new Transform({
   position: new Vector3(0,1,0),
   scale: new Vector3().setAll(1),
