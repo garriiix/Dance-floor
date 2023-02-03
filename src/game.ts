@@ -107,7 +107,8 @@ beatKeeper.addComponent(new Beat(0.5))
 
 audioSource.playing = true
 const party = new Entity()
-party.addComponent(new GLTFShape("models/01_rocket.glb"))
+party.addComponent(new GLTFShape("models/rocket_idle_anim_flame.glb"))
+party.addComponent(new GLTFShape("models/rocket_idle_anim.glb"))
 party.addComponent(new Transform({
   position: new Vector3(0,1,0),
   scale: new Vector3().setAll(1),
